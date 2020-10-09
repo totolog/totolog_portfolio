@@ -842,14 +842,27 @@ lottie.loadAnimation({
 });
 </script>
 <script>
-$(function() {
-	setTimeout(function(){
-		$('.start p').fadeIn(1600);
-	},500); //0.5秒後にロゴをフェードイン!
-	setTimeout(function(){
-		$('.start').fadeOut(500);
-	},2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
-});
+    $(function() {
+        $(".container").css("display", "none");
+        setTimeout(function() {
+            $(".start").fadeOut();
+        }, 5000);
+    });
+    $(function() {
+        $(".container").css({opacity: "0"});
+        setTimeout(function() {
+            $(".container").css("display", "block");
+            $(".container").animate({opacity: "1"},2000);
+        }, 5000)
+    });
+// $(function() {
+// 	setTimeout(function(){
+// 		$('.start p').fadeIn(1600);
+// 	},500); //0.5秒後にロゴをフェードイン!
+// 	setTimeout(function(){
+// 		$('.start').fadeOut(500);
+// 	},2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+// });
 </script>
 <script>
 var ctx = document.getElementById("myPieChart");
