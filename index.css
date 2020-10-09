@@ -75,15 +75,7 @@ h2 {
 	width: 100%;
 	z-index: 9000;
 }
-/* .start p {
-	position: fixed;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	display: none;
-	z-index: 9999;
-	width: 280px;
-} */
+
 /* 全体図 */
 .container {
     display: flex;
@@ -683,6 +675,7 @@ h2 {
 .estimation_container .main_choice_container {
     width: 30%;
 }
+
 .estimation_container .choice1 {
     box-shadow: 0 6px #808080;
     margin: 2rem 0;
@@ -700,6 +693,7 @@ h2 {
 .estimation_container .choice2 .sub_option,
 .estimation_container .choice1 .main_option {
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .estimation_container .choice1 .choice_image {
