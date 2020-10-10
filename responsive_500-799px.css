@@ -1,0 +1,160 @@
+@media screen and (min-width: 500px) and (max-width: 799px) {
+
+    /* 共通 */
+    /* .font_normal {
+        font-size: 1.5vw;
+    } */
+    h2 {
+        margin-top: 0;
+    }
+    .sp {
+        display: block;
+    }
+    /* ヘッダー */
+    header {
+        background-color: #23232D;
+        width: 100%;
+        z-index: 1000;
+        position: fixed;
+    }
+    header img {
+        width: 30%;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    header .header_logo {
+        text-align: center;
+        border-bottom: 2px solid #F4F5FB;
+    }
+    header .header_menu {
+        padding-top: 20px;
+    }
+    header .header_menues ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    header .header_menues ul li {
+        width: calc(100%/5);
+        border-right: 2px solid #F4F5FB;
+        list-style: none;
+        text-align: center;
+    }
+    .header {
+        display: none;
+    }
+    .header img {
+        display: none;
+    }
+    /* メイン */
+    .main_container {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10rem;
+    }
+    /* トップページ */
+    .home_container {
+        min-height: inherit;
+        max-height: 73vh;
+    }
+    .home_container .home_area {
+        padding-top: 4vw;
+    }
+    /* .home_container .font_normal {
+        font-size: 1.5vw;
+    } */
+    .home_container .welcome .welcome_area {
+        background-size: 40%;
+    }
+
+    .home_container h1 {
+        margin-top: 3.5vw;
+        margin-bottom: 2.5vw;
+        font-size: 5vw;
+    }
+    .home_container .btn_center {
+        margin-top: 6vh;
+    }
+    .home_container a {
+        padding: 1vw 2vw;
+    }
+    .home_container .contact_btn {
+        font-size: 1.5vw;
+    }
+
+    /* About */
+    .about_container {
+        height: 70vh;
+    }
+    .about_container .about_area {
+        height: 62vw;
+    }
+
+    /* サービス */
+    .service_container .right {
+        margin-top: 1rem;
+        margin-left: 45%;
+    }
+    .service_container .service_content {
+        margin-top: 2rem;
+        padding: 0.5rem 1.5rem;
+    }
+    .service_container .content_image {
+        height: auto;
+    }
+    .service_container .content_text {
+        height: 60%;
+    }
+    .service_container .content_text p {
+        margin-top: 0;
+    }
+    .service_container .index_lp,
+    .service_container .index_d, 
+    .service_container .index_a, 
+    .service_container .index_ec, 
+    .service_container .index_e, 
+    .service_container .index_t {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .service_container .index_lp::after,
+    .service_container .index_d::after,
+    .service_container .index_a::after,
+    .service_container .index_ec::after,
+    .service_container .index_e::after,
+    .service_container .index_t::after {
+        bottom: -6%;
+    }
+    /* Flow */
+    .flow_container {
+        height: 80vw;
+    }
+
+    /* Work */
+    .works_container .right {
+        margin-left: 50%;
+        margin-top: 1rem;
+    }
+
+    .works_container .works_content {
+        width: 30%;
+        min-width: 30%;
+    }
+
+    /* 見積もり */
+    .estimation_container .estimation_contents {
+        margin-top: 3rem;
+    }
+
+    .estimation_container .choice_details p {
+        font-size: 1.7vw;
+    }
+
+    .estimation_container .choice_main {
+        height: 30vh;
+    }
+    .estimation_container .total_estimation .cost_container .cost_box {
+        width: 70%;
+    }
+
+}

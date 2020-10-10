@@ -1,0 +1,99 @@
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+
+    /* 共通 */
+    .header {
+        font-size: 1.5vw;
+    }
+    .font_normal {
+        font-size: 1.5vw;
+    }
+    h2 {
+        margin-top: 0;
+    }
+    /* トップページ */
+    .home_container {
+        min-height: inherit;
+        max-height: 650px;
+    }
+    .home_container .home_area {
+        padding-top: 4vw;
+    }
+    .home_container .font_normal {
+        font-size: 1.5vw;
+    }
+
+    .home_container h1 {
+        margin-top: 3.5vw;
+        margin-bottom: 2.5vw;
+        font-size: 2.5vw;
+    }
+    .home_container .btn_center {
+        margin-top: 6vh;
+    }
+    .home_container a {
+        padding: 1vw 2vw;
+    }
+    .home_container .contact_btn {
+        font-size: 1.5vw;
+    }
+
+    /* About */
+    .about_container {
+        height: 90vh;
+    }
+    .about_container .about_area {
+        height: 62vw;
+    }
+
+    /* サービス */
+    .service_container .right {
+        margin-top: 1rem;
+    }
+    .service_container .service_content {
+        margin-top: 2rem;
+        padding: 0.5rem 1.5rem;
+    }
+    .service_container .content_image {
+        height: auto;
+    }
+    .service_container .content_text {
+        height: 60%;
+    }
+    .service_container .content_text p {
+        margin-top: 0;
+    }
+    .service_container .index_lp,
+    .service_container .index_d, 
+    .service_container .index_a, 
+    .service_container .index_ec, 
+    .service_container .index_e, 
+    .service_container .index_t {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .service_container .index_lp::after,
+    .service_container .index_d::after,
+    .service_container .index_a::after,
+    .service_container .index_ec::after,
+    .service_container .index_e::after,
+    .service_container .index_t::after {
+        bottom: -6%;
+    }
+    /* Flow */
+    .flow_container {
+        height: 65vw;
+    }
+
+    .works_container .works_content {
+        width: 30%;
+        min-width: 30%;
+    }
+
+    .estimation_container .choice_main {
+        height: 50vh;
+    }
+    .estimation_container .total_estimation .cost_container .cost_box {
+        width: 60%;
+    }
+
+}

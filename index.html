@@ -5,52 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/0e548a2bd1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive_1025-1300px.css">
+    <link rel="stylesheet" href="responsive_800-1024px.css">
+    <link rel="stylesheet" href="responsive_500-799px.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js" type="text/javascript"></script>
     <title>Home | TotologPortfolio</title>
 </head>
 <body>
-    <div id="lottie" class="start"></div>
+    <!-- <div id="lottie" class="start"></div> -->
+    <header class="sp">
+        <div class="header_container">
+            <div class="header_logo">
+                <img src="img/logo-white.png" alt="">
+            </div>
+            <div class="header_menues">
+                <ul>
+                    <li class="about"><a href="#about">
+                        <div class=" header_menu font_w_color">
+                            <span class="menu_icon"><i class="fas fa-user fa-lg fontawesome-icon"></i></span>
+                            <p class="menu_name">ABOUT</p>
+                        </div>
+                    </a></li>
+                    <li class="service"><a href="#service">
+                        <div class="header_menu font_w_color">
+                            <span class="menu_icon"><i class="fas fa-laptop fa-lg fontawesome-icon"></i></span>
+                            <p class="menu_name">SERVICE</p>
+                        </div>
+                    </a></li>
+                    <li  class="flow"><a href="#flow">
+                        <div class="header_menu font_w_color">
+                            <span class="menu_icon"><i class="fas fa-arrow-circle-right fa-lg fontawesome-icon"></i></span>
+                            <p class="menu_name">FLOW</p>
+                        </div>
+                    </a></li>
+                    <li class="work"><a href="#works">
+                        <div class="header_menu font_w_color">
+                            <span class="menu_icon"><i class="fas fa-suitcase fa-lg fontawesome-icon"></i></span>
+                            <p class="menu_name">WORKS</p>
+                        </div>
+                    </a></li>
+                    <li class="estimation"><a href="#estimation">
+                        <div class="header_menu font_w_color">
+                            <span class="menu_icon"><i class="fas fa-check-square fa-lg fontawesome-icon"></i></span>
+                            <p class="menu_name">ESTIMATION</p>
+                        </div>
+                    </a></li>
+                    <li class="contact"><a href="#contact">
+                        <div class="header_menu font_w_color">
+                            <span class="menu_icon"><i class="fas fa-mail-bulk fa-lg fontawesome-icon"></i></span>
+                            <p class="menu_name">MAIL</p>
+                        </div>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <div class="container">
         <div class="header font_w_color">
             <nav>
                 <ul class="font_w_color">
-                    <li><a href="#">
+                    <li class="home"><a href="#">
                         <div class="flexbox header_menu">
                             <span class="menu_icon"><i class="fas fa-home fa-lg fontawesome-icon"></i></span>
                             <span class="menu_name">HOME</span>
                         </div>
                     </a></li>
-                    <li><a href="#about">
+                    <li class="about"><a href="#about">
                         <div class="flexbox header_menu">
                             <span class="menu_icon"><i class="fas fa-user fa-lg fontawesome-icon"></i></span>
                             <span class="menu_name">ABOUT</span>
                         </div>
                     </a></li>
-                    <li><a href="#service">
+                    <li class="service"><a href="#service">
                         <div class="flexbox header_menu">
                             <span class="menu_icon"><i class="fas fa-laptop fa-lg fontawesome-icon"></i></span>
                             <span class="menu_name">SERVICE</span>
                         </div>
                     </a></li>
-                    <li><a href="#flow">
+                    <li  class="flow"><a href="#flow">
                         <div class="flexbox header_menu">
                             <span class="menu_icon"><i class="fas fa-arrow-circle-right fa-lg fontawesome-icon"></i></span>
                             <span class="menu_name">FLOW</span>
                         </div>
                     </a></li>
-                    <li><a href="#works">
+                    <li class="work"><a href="#works">
                         <div class="flexbox header_menu">
                             <span class="menu_icon"><i class="fas fa-suitcase fa-lg fontawesome-icon"></i></span>
                             <span class="menu_name">WORKS</span>
                         </div>
                     </a></li>
-                    <li><a href="#estimation">
+                    <li class="estimation"><a href="#estimation">
                         <div class="flexbox header_menu">
                             <span class="menu_icon"><i class="fas fa-check-square fa-lg fontawesome-icon"></i></span>
                             <span class="menu_name">ESTIMATION</span>
                         </div>
                     </a></li>
-                    <li><a href="#contact">
+                    <li class="contact"><a href="#contact">
                         <div class="flexbox header_menu">
                             <span class="menu_icon"><i class="fas fa-mail-bulk fa-lg fontawesome-icon"></i></span>
                             <span class="menu_name">CONTACT</span>
@@ -128,7 +178,7 @@
                                                             <p class="percent">30%</p>
                                                         </div>
                                                         <div class="skill_item">
-                                                            <p class="language"><span class="circle ruby"></span>Ruby (ruby on rails)</p>
+                                                            <p class="language"><span class="circle ruby"></span>Ruby</p>
                                                             <p class="percent">30%</p>
                                                         </div>
                                                         <div class="skill_item">
@@ -832,7 +882,7 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-<script>
+<!-- <script>
 lottie.loadAnimation({
     container: document.getElementById('lottie'), // アニメーションをさせたいdivなどhtml要素ににつけた名前
     renderer: 'svg',
@@ -840,8 +890,8 @@ lottie.loadAnimation({
     autoplay: true,
     path: 'lottie/lottie.json' // 自分が書き出したjsonファイルの名前と場所（パス）を記述
 });
-</script>
-<script>
+</script> -->
+<!-- <script>
     $(function() {
         $(".container").css("display", "none");
         setTimeout(function() {
@@ -849,13 +899,11 @@ lottie.loadAnimation({
         }, 5000);
     });
     $(function() {
-        $(".container").css({opacity: "0"});
         setTimeout(function() {
-            $(".container").css("display", "block");
-            $(".container").animate({opacity: "1"},2000);
+            $(".container").css({display: "block"},2000);
         }, 5000)
     });
-</script>
+</script> -->
 <script>
 var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {
@@ -1050,7 +1098,6 @@ window.addEventListener('scroll', scrollAnimationFunc);
                 $(".map_details").removeClass("checked");
             }
 
-            
         var price_array = [];
         $('input[name="check[]"]:checked').each(function() {
             var tprice = $(this).val();
@@ -1066,6 +1113,18 @@ window.addEventListener('scroll', scrollAnimationFunc);
         var total = total_price.toLocaleString();
         $('.total_price').text(total);
 
+        });
+    });
+</script>
+<script>
+    $(function () {
+        var headerHight = 200;
+        $('a[href]').click(function(){
+            var href= $(this).attr("href");
+            var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top-headerHight; //ヘッダの高さ分位置をずらす
+            $("html, body").animate({scrollTop:position}, 550, "swing");
+                return false;
         });
     });
 </script>

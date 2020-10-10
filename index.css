@@ -58,6 +58,7 @@ a {
     background-color: #FFFFFF;
 }
 
+
 h2 {
     font-size: 2.5rem;
 }
@@ -76,11 +77,14 @@ h2 {
 	z-index: 9000;
 }
 
+.sp {
+    display: none;
+}
+
 /* 全体図 */
 .container {
     display: flex;
 }
-
 
 /* ヘッダー（メニュー） */
 .header {
@@ -93,7 +97,7 @@ h2 {
 }
 .header ul {
     list-style: none;
-    padding-left: 3rem;
+    padding-left: 3vw;
     padding-top: 7rem;
 }
 .header li {
@@ -104,9 +108,6 @@ h2 {
 }
 .header li .menu_icon {
     width: 3rem;
-}
-.header li .menu_name {
-    margin-left: 1rem;
 }
 
 .header img {
@@ -127,31 +128,38 @@ h2 {
     background: url(home_bg-1.svg) no-repeat top left;
     background-size: cover;
     height: 95vh;
-    max-height: 95vh;
+    max-height: 850px;
+    min-height: 750px;
     filter: drop-shadow(-10px 10px 10px #808080);
 
 }
 .home_container .home_area {
     height: 100vh;
-    padding-top: 4rem;
-
+    padding-top: 5rem;
 }
 /* ウェルカムボード */
 .home_container .welcome {
     background-color: #4F58AB;
     max-width: 1100px;
-    margin: 0 auto 3rem;
-    height: 10rem;
+    margin: 0 auto 2vw;
+    padding: 1rem 0 1rem 3rem;
     z-index: 10;
     border-radius: 20px;
 }
 /* ウェルカムボード背景 */
 .home_container .welcome .welcome_area {
     background: url(title_bg.svg) no-repeat;
-    background-position: 95% 20%;
+    background-position: 95% 50%;
+    background-size: 30%;
+}
+.home_container h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 .welcome .welcome_text {
-    padding: 1rem 0 1rem 3rem;
+    width: 60%;
 }
 .welcome .welcome_text p.title {
     margin-top: 1rem;
@@ -161,19 +169,18 @@ h2 {
 }
 
 /* トップコンテンツ */
-.home_container .home_title_content h1 {
-    font-size: 2.5rem;
-    font-weight: 900;
-}
 .home_container .home_content_text {
     width: 45%;
 }
 /* トップコンテンツ背景 */
 .home_container .home_content img {
-    height: 60%;
+    /* height: 60%; */
+    width: 40%;
     position: absolute;
-    top: 15%;
-    right: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+
 }
 
 /* コンタクトボタン */
@@ -188,7 +195,6 @@ h2 {
     background-color: #FFAA02;
     font-size: 1.3rem;
 }
-
 
 /* Aboutページ */
 .scroll {
@@ -469,7 +475,7 @@ h2 {
 /* Flow */
 .flow_container {
     background: url(flow_bg-1.svg) no-repeat top right;
-    background-size: 100%;
+    background-size: cover;
     height: 100vh;
 }
 .flow_container .flow_area {
@@ -695,6 +701,9 @@ h2 {
     border-radius: 20px;
     cursor: pointer;
 }
+.estimation_container .choice2 .sub_option {
+    height: 90px;
+}
 
 .estimation_container .choice1 .choice_image {
     text-align: center;
@@ -737,6 +746,12 @@ h2 {
 }
 .estimation_container .choice_option .sub_option .choice_details {
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.estimation_container .choice_option .sub_option .choice_details p {
+    margin-bottom: 5px;
 }
 .estimation_container .choice_option .option_icon img {
     width: 50%;
