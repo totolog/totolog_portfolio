@@ -1,77 +1,31 @@
-/* iPad pro用 */
 @media screen and (min-width: 800px) and (max-width: 1024px) {
 
     /* 共通 */
-    /* .font_normal {
+    .header {
         font-size: 1.5vw;
-    } */
+    }
+    .font_normal {
+        font-size: 1.5vw;
+    }
     h2 {
         margin-top: 0;
-    }
-    .sp {
-        display: block;
-    }
-    /* ヘッダー */
-    header {
-        background-color: #23232D;
-        width: 100%;
-        z-index: 1000;
-        position: fixed;
-    }
-    header img {
-        width: 30%;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-    }
-    header .header_logo {
-        text-align: center;
-        border-bottom: 2px solid #F4F5FB;
-    }
-    header .header_menu {
-        padding-top: 20px;
-    }
-    header .header_menues ul {
-        display: flex;
-        padding: 0;
-        margin: 0;
-    }
-    header .header_menues ul li {
-        width: calc(100%/5);
-        border-right: 2px solid #F4F5FB;
-        list-style: none;
-        text-align: center;
-    }
-    .header {
-        display: none;
-    }
-    .header img {
-        display: none;
-    }
-    /* メイン */
-    .main_container {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 10rem;
     }
     /* トップページ */
     .home_container {
         min-height: inherit;
-        /* max-height: 73vh; */
+        max-height: 650px;
     }
     .home_container .home_area {
-        padding-top: 8vw;
+        padding-top: 4vw;
     }
-    /* .home_container .font_normal {
+    .home_container .font_normal {
         font-size: 1.5vw;
-    } */
-    .home_container .welcome .welcome_area {
-        background-size: 40%;
     }
 
     .home_container h1 {
         margin-top: 3.5vw;
         margin-bottom: 2.5vw;
-        font-size: 5vw;
+        font-size: 2.5vw;
     }
     .home_container .btn_center {
         margin-top: 6vh;
@@ -85,7 +39,7 @@
 
     /* About */
     .about_container {
-        height: 55vh;
+        height: 90vh;
     }
     .about_container .about_area {
         height: 62vw;
@@ -94,7 +48,6 @@
     /* サービス */
     .service_container .right {
         margin-top: 1rem;
-        margin-left: 45%;
     }
     .service_container .service_content {
         margin-top: 2rem;
@@ -128,13 +81,7 @@
     }
     /* Flow */
     .flow_container {
-        height: 70vw;
-    }
-
-    /* Work */
-    .works_container .right {
-        margin-left: 50%;
-        margin-top: 1rem;
+        height: 65vw;
     }
 
     .works_container .works_content {
@@ -142,20 +89,11 @@
         min-width: 30%;
     }
 
-    /* 見積もり */
-    .estimation_container .estimation_contents {
-        margin-top: 3rem;
-    }
-
-    .estimation_container .choice_details p {
-        font-size: 1.7vw;
-    }
-
     .estimation_container .choice_main {
-        height: 30vh;
+        height: 50vh;
     }
     .estimation_container .total_estimation .cost_container .cost_box {
-        width: 70%;
+        width: 60%;
     }
 
 }

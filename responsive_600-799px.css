@@ -1,5 +1,5 @@
 /* iPad pro用 */
-@media screen and (min-width: 800px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 799px) {
 
     /* 共通 */
     /* .font_normal {
@@ -85,7 +85,7 @@
 
     /* About */
     .about_container {
-        height: 55vh;
+        height: 70vh;
     }
     .about_container .about_area {
         height: 62vw;
@@ -128,7 +128,7 @@
     }
     /* Flow */
     .flow_container {
-        height: 70vw;
+        height: 85vw;
     }
 
     /* Work */

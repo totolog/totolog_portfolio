@@ -1,0 +1,431 @@
+/* iPad pro用 */
+@media screen and (max-width: 499px) {
+
+    /* 共通 */
+    .font_normal {
+        font-size: 10px;
+    }
+    h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 2rem;
+    }
+    .sp {
+        display: block;
+    }
+    .pc {
+        display: none;
+    }
+    /* ヘッダー */
+    header {
+        background-color: #23232D;
+        width: 100%;
+        z-index: 1000;
+        position: fixed;
+    }
+    header img {
+        width: 40%;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    header .header_logo {
+        text-align: center;
+        border-bottom: 2px solid #F4F5FB;
+    }
+    header .header_menu {
+        padding-top: 10px;
+    }
+    header .header_menues ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    header .header_menues ul li {
+        width: calc(100%/4);
+        border-right: 2px solid #F4F5FB;
+        list-style: none;
+        text-align: center;
+    }
+    header .header_menues ul li a {
+        font-size: 10px;
+    }
+    header .header_menues ul li p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    /* メイン */
+    .main_container {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 6rem;
+    }
+    /* トップページ */
+    .home_container {
+        min-height: inherit;
+        max-height: 475px;
+        height: 150vw;
+    }
+    .home_container .home_area {
+        padding-top: 3rem;
+        height: inherit;
+    }
+    /* .home_container .font_normal {
+        font-size: 1.5vw;
+    } */
+    .home_container .welcome {
+        margin: 0 auto;
+        padding: 0;
+        z-index: 10;
+        border-radius: 20px;
+    }
+    .home_container .welcome .welcome_area {
+        padding: 15px 20px;
+        background-position: 90% 15%;
+        background-size: 40%;
+    }
+    .welcome .welcome_text p.title {
+        margin-top: 1rem;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .welcome .welcome_text {
+        width: 100%;
+    }
+
+    .home_container h1 {
+        margin-top: 1.5rem;
+        margin-bottom: 2.5vw;
+        font-size: 5vw;
+    }
+    .home_container .home_content_text {
+        width: 50%;
+    }
+    .home_container .btn_center {
+        margin-top: 2rem;
+    }
+    .home_container a {
+        padding: 1vw 2vw;
+    }
+    .home_container .contact_btn {
+        font-size: 1.5vw;
+    }
+
+    /* About */
+    .about_container {
+        /* height: 100vh; */
+    }
+    .about_container .about_area {
+        height: inherit;
+        margin-top: 5rem;
+    }
+    .about_container .about_box_bg {
+        background-position: 95% 5%;
+        padding: 10px 20px;
+        background-size: 35%;
+    }
+    .about_container .introduce_area h4,
+    .about_container .skill_area h4 {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        padding-left: 0;
+    }
+    .about_container .introduce_area {
+        padding-left: 0.5rem;
+    }
+    .about_container .introduce_content {
+        padding-left: 0.5rem;
+        width: 100%;
+        font-size: 12px;
+    }
+    .about_container .skill_content.flexbox {
+        display: block;
+    }
+    .about_container .skill_graph {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .about_container .skill_items {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .about_container .skill_item_area .language {
+        font-size: 13px;
+    }
+
+    /* サービス */
+    .service_container .service_area {
+        margin-top: 0rem;
+    }
+    .service_container .service_title {
+        flex-wrap: wrap;
+    }
+    .service_container .left {
+        width: 100%;
+        height: 200px;
+        background-size: 40%;
+        background-position: 80% 70%;
+    }
+    .service_container .right {
+        width: 100%;
+        margin-top: 10rem;
+        margin-left: inherit;
+    }
+    .service_container .service_content {
+        margin-top: 2rem;
+        padding: 0.5rem 1.5rem;
+        width: 100%;
+    }
+    .service_container .content_image {
+        height: auto;
+    }
+    .service_container .content_text {
+        height: 60%;
+    }
+    .service_container .content_text p {
+        margin-top: 0;
+    }
+    .service_container .index_lp,
+    .service_container .index_d, 
+    .service_container .index_a, 
+    .service_container .index_ec, 
+    .service_container .index_e, 
+    .service_container .index_t {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .service_container .index_lp::after,
+    .service_container .index_d::after,
+    .service_container .index_a::after,
+    .service_container .index_ec::after,
+    .service_container .index_e::after,
+    .service_container .index_t::after {
+        bottom: -6%;
+        left: -5%;
+    }
+    /* Flow */
+    .flow_container {
+        height: inherit;
+        background: url(flow_bg-1.svg) no-repeat;
+        background-size: cover;
+    }
+
+    .flow_container .flow_area {
+        margin-top: 3rem;
+        padding-bottom: 6rem;
+    }
+    .flow_container .flow_title.flexbox {
+        flex-wrap: wrap-reverse;
+        position: relative;
+    }
+    .flow_container .flow_content_block {
+        flex-wrap: wrap;
+    }
+    .flow_container .left {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 6rem;
+    }
+    .flow_container .right {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        background-size: 60%;
+        background-position: 100% 30%;
+    }
+    .flow_container .flow_content {
+        width: 100%;
+    }
+    .flow_container .circle_default {
+        /* width: 250px;
+        height: auto; */
+        display: none;
+    }
+    /* .flow_container .flow_image {
+        display: none;
+    } */
+    .flow_container img {
+        width:auto;
+        height:auto;
+        max-width:100%;
+        max-height:100%;
+        border-radius: 10px;
+    }
+
+    .accordion {
+        margin: 1rem 0;
+        padding: 0;
+        list-style: none;
+        border-top: 1px solid #e5e5e5;
+        width: 100%;
+    }
+    .accordion-item {
+        border-bottom: 1px solid #e5e5e5;
+    }
+    /* Thumb */
+    .accordion-thumb {
+        margin: 0;
+        padding: .8rem 0;
+        cursor: pointer;
+        font-weight: normal;
+    }
+    .accordion-thumb::before {
+        content: '';
+        display: inline-block;
+        height: 7px;
+        width: 7px;
+        margin-right: 1rem;
+        margin-left: .5rem;
+        vertical-align: middle;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        -webkit-transition: -webkit-transform .2s ease-out;
+        transition: -webkit-transform .2s ease-out;
+        transition: transform .2s ease-out;
+        transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+    }
+      /* Panel */
+    .accordion-panel {
+        margin: 0;
+        padding-bottom: .8rem;
+        display: none;
+    }
+
+      /* Active */
+      .accordion-item.is-active .accordion-thumb::before {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+      }
+
+    /* Work */
+    .works_container .works_area {
+        margin-top: 0rem;
+    }
+    .works_container .works_area .works_title {
+        flex-wrap: wrap;
+    }
+
+    .works_container .right {
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 6rem;
+    }
+    .works_container .left {
+        width: 100%;
+        height: 200px;
+        background-size: 50%;
+        background-position: 90% 30%;
+    }
+
+    .works_container .works_content {
+        width: 40%;
+        min-width: 40%;
+    }
+
+    .works_container .works_content {
+        margin: 1rem;
+        box-shadow: 0 0 10px #808080;
+    }
+
+    .works_container .content_image p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 8px;
+    }
+
+    .works_container .content_details {
+        padding: 0 10px 3px;
+    }
+    .works_container .detail,
+    .works_container .tags_field .tag_flame {
+        font-size: 5px;
+    }
+    .works_container .tags_field .tag_flame {
+        border: 1px solid #2A266A;
+        padding: 2px 5px;
+        margin-right: 5px;
+    }
+    .works_container .detail {
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+    .works_container .tags_field {
+        width: 100%;
+        margin: 10px 0 0;
+        padding-right: 5px;
+    }
+    .works_container .tags_field.flexbox {
+        display: block;
+    }
+    .works_container .tags_field .good_btn {
+        margin-top: 10px;
+        margin-right: 10px;
+        text-align: right;
+    }
+
+    /* 見積もり */
+    .estimation_container .estimation_contents {
+        margin-top: 3rem;
+    }
+
+    .estimation_container .estimation_title {
+        flex-wrap: wrap-reverse;
+    }
+    .estimation_container .left {
+        width: 100%;
+        margin-right: 0%;
+        margin-top: 2rem;
+    }
+    .estimation_container .right {
+        width: 100%;
+        height: 150px;
+        background: url(estimation_bg.svg) no-repeat;
+        background-size: 50%;
+        background-position: 70% 100%;
+    }
+
+    .estimation_container .choice_details p {
+        /* font-size: 1rem; */
+    }
+    .estimation_container .choice_main .flexbox {
+        display: block;
+    }
+    .estimation_container .option_choice_container,
+    .estimation_container .main_choice_container,
+    .estimation_container .total_estimation .cost_container {
+        width: 100%;
+    }
+    .estimation_container .total_estimation .cost_container {
+        padding: 10px 0;
+    }
+    .estimation_container .total_estimation .cost_container h3 {
+        /* padding-top: 10px; */
+        padding-left: 15px;
+    }
+
+    .estimation_container .choice_main {
+        height: inherit;
+    }
+    .estimation_container .choice_option {
+        margin-top: 4rem;
+    }
+    .estimation_container .total_estimation .cost_container .cost_box {
+        width: 50%;
+    }
+
+    .contact_container .contact_area {
+        margin-top: 5rem;
+    }
+    .contact_container .contact_blocks {
+        display: block;
+    }
+    .contact_container .contact_left, .contact_container .contact_right {
+        width: 100%;
+    }
+    .contact_container .contact_send {
+        margin-top: 3rem;
+    }
+
+}

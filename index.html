@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="responsive_1025-1300px.css">
     <link rel="stylesheet" href="responsive_800-1024px.css">
-    <link rel="stylesheet" href="responsive_500-799px.css">
+    <link rel="stylesheet" href="responsive_600-799px.css">
+    <link rel="stylesheet" href="responsive_-499px.css">
+    <!-- <link rel="stylesheet" href="responsive_500-799px.css"> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js" type="text/javascript"></script>
     <title>Home | TotologPortfolio</title>
 </head>
@@ -44,13 +46,13 @@
                             <p class="menu_name">WORKS</p>
                         </div>
                     </a></li>
-                    <li class="estimation"><a href="#estimation">
+                    <li class="estimation pc"><a href="#estimation">
                         <div class="header_menu font_w_color">
                             <span class="menu_icon"><i class="fas fa-check-square fa-lg fontawesome-icon"></i></span>
                             <p class="menu_name">ESTIMATION</p>
                         </div>
                     </a></li>
-                    <li class="contact"><a href="#contact">
+                    <li class="contact pc"><a href="#contact">
                         <div class="header_menu font_w_color">
                             <span class="menu_icon"><i class="fas fa-mail-bulk fa-lg fontawesome-icon"></i></span>
                             <p class="menu_name">MAIL</p>
@@ -61,7 +63,7 @@
         </div>
     </header>
     <div class="container">
-        <div class="header font_w_color">
+        <div class="header font_w_color pc">
             <nav>
                 <ul class="font_w_color">
                     <li class="home"><a href="#">
@@ -108,7 +110,7 @@
                     </a></li>
                 </ul>
             </nav>
-            <img src="img/logo.png" alt="">
+            <img class="pc" src="img/logo.png" alt="">
         </div>
         <div class="main_container">
             <div class="main_area">
@@ -272,19 +274,48 @@
                             <div class="right"></div>
                         </div>
                         <div class="flow_contents">
-                            <div class="flow_content_block flexbox between">
-                                <div class="flow_content">
+                            <div class="flow_content_block">
+                                <div class="flow_content pc">
                                     <div class="flow_image circle_default consulting"></div>
                                     <p>Consulting</p>
                                 </div>
-                                <div class="flow_content">
+                                <div class="flow_content pc">
                                     <div class="flow_image circle_default design"></div>
                                     <p>Design</p>
                                 </div>
-                                <div class="flow_content">
+                                <div class="flow_content pc">
                                     <div class="flow_image circle_default cording"></div>
                                     <p>Cording</p>
                                 </div>
+                                <ul class="accordion sp">
+                                    <li class="accordion-item is-active">
+                                        <h3 class="accordion-thumb">1.Consulting</h3>
+                                        <div class="flow_image circle_default">
+                                            <img src="img/consult.jpg" alt="">
+                                        </div>
+                                        <p class="accordion-panel">
+                                            First of all, please contact us if you have any problems such as creating or modifying a homepage or creating an EC site. After that, we will consult with you in detail to understand your needs and wants.
+                                        </p>
+                                    </li>
+                                    <li class="accordion-item">
+                                        <h3 class="accordion-thumb">2.Design</h3>
+                                        <div class="flow_image circle_default">
+                                            <img src="img/design.jpg" alt="">
+                                        </div>
+                                        <p class="accordion-panel">
+                                            We will decide the design together with the customer. We will prepare a rough design here and make a design decision while consulting with the customer based on it.
+                                        </p>
+                                    </li>
+                                    <li class="accordion-item">
+                                        <h3 class="accordion-thumb">3.Cording</h3>
+                                        <div class="flow_image circle_default">
+                                            <img src="img/cording.jpg" alt="">
+                                        </div>
+                                        <p class="accordion-panel">
+                                            Code as designed. After the completion, we will ask the customer to confirm it and make improvements while accepting minor changes. After that, it will be posted on the net as a website.
+                                        </p>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -943,6 +974,17 @@ var scrollAnimationFunc = function() {
 }
 window.addEventListener('change', scrollAnimationFunc);
 window.addEventListener('scroll', scrollAnimationFunc);
+</script>
+<script>
+    $(function() {
+	$(".accordion > .accordion-item.is-active").children(".accordion-panel, .circle_default").slideDown();
+	$(".accordion > .accordion-item").click(function() {
+		// Cancel the siblings
+		$(this).siblings(".accordion-item").removeClass("is-active").children(".accordion-panel, .circle_default").slideUp();
+		// Toggle the item
+		$(this).toggleClass("is-active").children(".accordion-panel, .circle_default").slideToggle("ease-out");
+	});
+});
 </script>
 <script>
     $(function() {

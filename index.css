@@ -500,6 +500,8 @@ h2 {
 
 .flow_container .flow_content_block {
     margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
 }
 .flow_container .flow_content {
     width: 30%;
