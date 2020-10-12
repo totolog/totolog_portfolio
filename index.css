@@ -317,6 +317,9 @@ h2 {
     margin-left: 40%;
     margin-top: 5rem;
 }
+.service_container .service_area {
+    margin-top: 5rem;
+}
 .service_container .service_content {
     border-radius: 10px;
     padding: 1rem 2rem;
