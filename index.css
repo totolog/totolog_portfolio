@@ -98,7 +98,7 @@ h2 {
 .header ul {
     list-style: none;
     padding-left: 3vw;
-    padding-top: 7rem;
+    padding-top: 3rem;
 }
 .header li {
     margin-bottom: 20%;
@@ -210,7 +210,7 @@ h2 {
 }
 
 .about_container .about_area {
-    height: 90vh;
+    /* height: 90vh; */
     margin-top: 8rem;
 }
 .about_container .about_box_area {
@@ -424,7 +424,7 @@ h2 {
 .service_container .under_line_ec:after,
 .service_container .under_line_e:after,
 .service_container .under_line_t:after {
-    border-right: 20px solid transparent;
+    border-right: 33px solid transparent;
 }
 .service_container .under_line_lp:before,
 .service_container .under_line_d:before,
