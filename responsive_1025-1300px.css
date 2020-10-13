@@ -39,7 +39,10 @@
 
     /* Flow */
     .flow_container {
-        /* height: 65vw; */
+        height: inherit;
+    }
+    .flow_container .flow_contents {
+        padding-bottom: 7rem;
     }
 
     .estimation_container .choice_main {
