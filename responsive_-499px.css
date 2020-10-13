@@ -107,10 +107,14 @@
         margin-top: 2rem;
     }
     .home_container a {
-        padding: 1vw 2vw;
+        padding: 1.5vw 3vw;
     }
     .home_container .contact_btn {
-        font-size: 1.5vw;
+        font-size: 3.25vw;
+    }
+
+    .home_container .icon {
+        margin-right: 1.5vw;
     }
 
     /* About */
