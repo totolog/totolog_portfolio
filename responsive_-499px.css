@@ -43,9 +43,12 @@
     }
     header .header_menues ul li {
         width: calc(100%/4);
-        border-right: 2px solid #F4F5FB;
         list-style: none;
         text-align: center;
+    }
+    header .header_menues ul li:not(:last-child) {
+        border-right: 2px solid #F4F5FB;
+
     }
     header .header_menues ul li a {
         font-size: 10px;
