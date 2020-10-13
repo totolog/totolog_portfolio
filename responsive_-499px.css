@@ -46,9 +46,8 @@
         list-style: none;
         text-align: center;
     }
-    header .header_menues ul li:not(:nth-of-type(4)) {
-        border-right: 2px solid #F4F5FB;
-
+    header .header_menues ul li.work {
+        border-right: none;
     }
     header .header_menues ul li a {
         font-size: 10px;
