@@ -46,6 +46,6 @@
     }
 
     .estimation_container .choice_main {
-        /* height: 50vh; */
+        height: inherit;
     }
 }
