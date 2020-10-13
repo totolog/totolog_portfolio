@@ -53,13 +53,18 @@
         margin-left: 0;
         margin-top: 10rem;
     }
+    .home_side {
+        margin-left: 8vw;
+    }
     /* トップページ */
     .home_container {
         min-height: inherit;
         /* max-height: 73vh; */
+        padding-top: 8vw;
+        padding-bottom: 8vw;
     }
     .home_container .home_area {
-        padding-top: 8vw;
+        /* padding-top: 8vw; */
     }
     /* .home_container .font_normal {
         font-size: 1.5vw;
@@ -77,18 +82,18 @@
         margin-top: 6vh;
     }
     .home_container a {
-        padding: 1vw 2vw;
+        padding: 1.5vw 2.5vw;
     }
     .home_container .contact_btn {
-        font-size: 1.5vw;
+        font-size: 2.5vw;
     }
 
     /* About */
     .about_container {
-        height: 55vh;
+        /* height: 55vh; */
     }
     .about_container .about_area {
-        height: 62vw;
+        /* height: 62vw; */
     }
 
     /* サービス */
