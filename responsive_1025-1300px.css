@@ -10,7 +10,7 @@
         min-height: auto;
     }
     .home_container .home_area {
-        padding-top: 4vw;
+        padding-top: 0;
     }
     .home_container .font_normal {
         font-size: 1.5vw;
@@ -34,15 +34,15 @@
     /* Service */
     .about_container .about_area {
         /* max-height: 900px; */
-        height: 62vw;
+        /* height: 62vw; */
     }
 
     /* Flow */
     .flow_container {
-        height: 65vw;
+        /* height: 65vw; */
     }
 
     .estimation_container .choice_main {
-        height: 50vh;
+        /* height: 50vh; */
     }
 }
