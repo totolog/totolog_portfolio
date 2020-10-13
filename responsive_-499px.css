@@ -212,7 +212,9 @@
         background: url(flow_bg-1.svg) no-repeat;
         background-size: cover;
     }
-
+    .flow_container .flow_area {
+        padding-bottom: 0;
+    }
     .flow_container .flow_area {
         margin-top: 3rem;
         padding-bottom: 6rem;
@@ -238,6 +240,9 @@
     }
     .flow_container .flow_content {
         width: 100%;
+    }
+    .flow_container .flow_contents {
+        padding-bottom: 0;
     }
     .flow_container .circle_default {
         /* width: 250px;
@@ -335,7 +340,7 @@
     .works_container .content_image p {
         margin-top: 5px;
         margin-bottom: 5px;
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .works_container .content_details {
@@ -343,7 +348,7 @@
     }
     .works_container .detail,
     .works_container .tags_field .tag_flame {
-        font-size: 5px;
+        font-size: 11px;
     }
     .works_container .tags_field .tag_flame {
         border: 1px solid #2A266A;
