@@ -46,7 +46,7 @@
         list-style: none;
         text-align: center;
     }
-    header .header_menues ul li:not(:last-child) {
+    header .header_menues ul li:not(:nth-of-type(4)) {
         border-right: 2px solid #F4F5FB;
 
     }
