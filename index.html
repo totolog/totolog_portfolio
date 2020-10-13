@@ -1174,4 +1174,30 @@ window.addEventListener('scroll', scrollAnimationFunc);
         });
     });
 </script>
+<script>
+    $(function () {
+                //PCのとき
+                if (window.matchMedia('(min-width: 769px)').matches) {
+                    //切り替える画面サイズ
+                    var headerHight = 20;
+                    $('a[href]').click(function(){
+                        var href= $(this).attr("href");
+                        var target = $(href == "#" || href == "" ? 'html' : href);
+                        var position = target.offset().top-headerHight; //ヘッダの高さ分位置をずらす
+                        $("html, body").animate({scrollTop:position}, 550, "swing");
+                            return false;
+                    });
+                    //スマホのとき
+                } else {
+                    var headerHight = 110;
+                    $('a[href]').click(function(){
+                        var href= $(this).attr("href");
+                        var target = $(href == "#" || href == "" ? 'html' : href);
+                        var position = target.offset().top-headerHight; //ヘッダの高さ分位置をずらす
+                        $("html, body").animate({scrollTop:position}, 550, "swing");
+                            return false;
+                    });
+                };
+            });
+</script>
 </html>
