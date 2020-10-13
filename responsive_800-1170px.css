@@ -54,7 +54,7 @@
     .main_container {
         width: 100%;
         margin-left: 0;
-        margin-top: 10rem;
+        /* margin-top: 10rem; */
     }
     .home_side {
         margin-left: 8vw;
@@ -63,7 +63,7 @@
     .home_container {
         min-height: inherit;
         /* max-height: 73vh; */
-        padding-top: 8vw;
+        padding-top: 23vw;
         padding-bottom: 8vw;
     }
     .home_container .home_area {
