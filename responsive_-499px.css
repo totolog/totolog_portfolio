@@ -44,6 +44,7 @@
     header .header_menues ul li {
         width: calc(100%/4);
         list-style: none;
+        border-right: 2px solid #F4F5FB;
         text-align: center;
     }
     header .header_menues ul li.work {
