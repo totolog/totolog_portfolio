@@ -163,5 +163,9 @@
     .estimation_container .total_estimation .cost_container .cost_box {
         width: 70%;
     }
+    .estimation_container .choice_main h3,
+    .estimation_container .choice_option h3 {
+        font-size: 3vw;
+    }
 
 }

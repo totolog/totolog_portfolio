@@ -526,6 +526,9 @@ h2 {
     font-size: 1.2rem;
     font-weight: 600;
 }
+.flow_container .flow_contents {
+    padding-bottom: 7rem;
+}
 
 .flow_container .flow_content .circle_default {
     width: 15vw;
@@ -693,8 +696,9 @@ h2 {
     background-size: 90%;
 }
 
-.estimation_container .choice_main {
-    height: 40vh;
+.estimation_container .choice_main h3,
+.estimation_container .choice_option h3 {
+    font-size: 2vw;
 }
 .estimation_container .option_choice_container,
 .estimation_container .main_choice_container {
@@ -719,6 +723,9 @@ h2 {
 .estimation_container .choice1 .main_option {
     border-radius: 20px;
     cursor: pointer;
+}
+.estimation_container .choice_option > .flexbox {
+    margin: 3rem 0;
 }
 .estimation_container .choice2 .sub_option {
     height: 90px;

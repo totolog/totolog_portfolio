@@ -430,5 +430,9 @@
     .contact_container .contact_send {
         margin-top: 3rem;
     }
+    .estimation_container .choice_main h3,
+    .estimation_container .choice_option h3 {
+        font-size: 25px;
+    }
 
 }
