@@ -1,5 +1,9 @@
 /* 共通 */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700;800;900&display=swap');
+* {
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
 html{
     scroll-behavior: smooth;
 }
@@ -93,6 +97,10 @@ h2 {
 }
 
 /* ヘッダー（メニュー） */
+
+.wrapper {
+    overflow: hidden;
+}
 .header {
     background-color: #23232D;
     font-size: 20px;
@@ -138,6 +146,7 @@ h2 {
     margin-left: 5%;
     padding-top: 5vw;
     padding-bottom: 5vw;
+    overflow-x: hidden;
 }
 .home_container .backg {
     background: url(home_bg-1.svg) no-repeat top left;
@@ -315,6 +324,9 @@ h2 {
 .t_up {
     transform: translate(0, 90px);
 }
+.service_container {
+    overflow: hidden;
+}
 .service_container .service_title {
     position: relative;
 }
@@ -333,12 +345,13 @@ h2 {
 }
 .service_container .service_area {
     margin-top: 8rem;
+    padding-bottom: 2rem;
 }
 .service_container .service_content {
     border-radius: 10px;
     padding: 1rem 2rem;
     margin-top: 5rem;
-    width: 23%;
+    width: 30%;
     box-shadow: 0 0 30px #808080;
 }
 .service_container .index_lp,
@@ -349,7 +362,7 @@ h2 {
 .service_container .index_t {
     position: relative;
 }
-.service_container .index_lp::after,
+/* .service_container .index_lp::after,
 .service_container .index_d::after,
 .service_container .index_a::after,
 .service_container .index_ec::after,
@@ -361,8 +374,8 @@ h2 {
     left: -11%;
     color: #F4F5FB;
     z-index: 2;
-}
-.service_container .index_lp::after {
+} */
+/* .service_container .index_lp::after {
     content: "L";
 }
 .service_container .index_d::after {
@@ -379,7 +392,7 @@ h2 {
 }
 .service_container .index_t::after {
     content: "T";
-}
+} */
 .service_container .content_image {
     height: 60%;
     text-align: center;
@@ -442,6 +455,9 @@ h2 {
 .service_container .under_line_e:after,
 .service_container .under_line_t:after {
     border-right: 33px solid transparent;
+    bottom: -2%;
+    left: 5%;
+    color: #EDEFF6;
 }
 .service_container .under_line_lp:before,
 .service_container .under_line_d:before,
@@ -453,37 +469,43 @@ h2 {
     border-radius: 0 10px 0 0;
 }
 .service_container .under_line_lp:after {
-    border-bottom: 20px solid #15579E;
+    /* border-bottom: 20px solid #15579E; */
+    content: "L";
 }
 .service_container .under_line_lp:before {
     border-top: 20px solid #15579E;
 }
 .service_container .under_line_d:after {
-    border-bottom: 20px solid #FF353D;
+    /* border-bottom: 20px solid #FF353D; */
+    content: "D";
 }
 .service_container .under_line_d:before {
     border-top: 20px solid #FF353D;
 }
 .service_container .under_line_a:after {
-    border-bottom: 20px solid #FF8607;
+    /* border-bottom: 20px solid #FF8607; */
+    content: "A";
 }
 .service_container .under_line_a:before {
     border-top: 20px solid #FF8607;
 }
 .service_container .under_line_ec:after {
-    border-bottom: 20px solid #1BB621;
+    /* border-bottom: 20px solid #1BB621; */
+    content: "C";
 }
 .service_container .under_line_ec:before {
     border-top: 20px solid #1BB621;
 }
 .service_container .under_line_e:after {
-    border-bottom: 20px solid #C46BD1;
+    /* border-bottom: 20px solid #C46BD1; */
+    content: "E";
 }
 .service_container .under_line_e:before {
     border-top: 20px solid #C46BD1;
 }
 .service_container .under_line_t:after {
-    border-bottom: 20px solid #04A1EC;
+    /* border-bottom: 20px solid #04A1EC; */
+    content: "T";
 }
 .service_container .under_line_t:before {
     border-top: 20px solid #04A1EC;
@@ -496,7 +518,7 @@ h2 {
     height: 100vh;
 }
 .flow_container .flow_area {
-    margin-top: 7rem;
+    margin-top: 5rem;
     padding-top: 2rem;
 }
 .flow_container .left {

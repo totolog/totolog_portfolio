@@ -164,6 +164,9 @@
     }
 
     /* サービス */
+    /* .service_container {
+        overflow: hidden;
+    } */
     .service_container .service_area {
         margin-top: 0rem;
     }

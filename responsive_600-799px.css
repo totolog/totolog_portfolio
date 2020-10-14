@@ -102,9 +102,13 @@
         margin-top: 1rem;
         margin-left: 45%;
     }
+    /* .service_container {
+        overflow-x: hidden;
+    } */
     .service_container .service_content {
         margin-top: 2rem;
         padding: 0.5rem 1.5rem;
+        width: 30%;
     }
     .service_container .content_image {
         height: auto;
