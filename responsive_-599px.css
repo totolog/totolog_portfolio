@@ -216,6 +216,14 @@
         bottom: -6%;
         left: -5%;
     }
+    .service_container .under_line_lp:after,
+    .service_container .under_line_d:after,
+    .service_container .under_line_a:after,
+    .service_container .under_line_ec:after,
+    .service_container .under_line_e:after,
+    .service_container .under_line_t:after {
+        left: 4%;
+    }
     /* Flow */
     .flow_container {
         height: inherit;

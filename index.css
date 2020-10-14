@@ -465,50 +465,52 @@ h2 {
 .service_container .under_line_ec:before,
 .service_container .under_line_e:before,
 .service_container .under_line_t:before {
-    border-left: 32px solid transparent;
+    /* border-left: 32px solid transparent; */
     border-radius: 0 10px 0 0;
+    width: 35px;
+    height: 20px;
 }
 .service_container .under_line_lp:after {
     /* border-bottom: 20px solid #15579E; */
     content: "L";
 }
 .service_container .under_line_lp:before {
-    border-top: 20px solid #15579E;
+    background-color: #15579E;
 }
 .service_container .under_line_d:after {
     /* border-bottom: 20px solid #FF353D; */
     content: "D";
 }
 .service_container .under_line_d:before {
-    border-top: 20px solid #FF353D;
+    background-color: #FF353D;
 }
 .service_container .under_line_a:after {
     /* border-bottom: 20px solid #FF8607; */
     content: "A";
 }
 .service_container .under_line_a:before {
-    border-top: 20px solid #FF8607;
+    background-color: #FF8607;
 }
 .service_container .under_line_ec:after {
     /* border-bottom: 20px solid #1BB621; */
     content: "C";
 }
 .service_container .under_line_ec:before {
-    border-top: 20px solid #1BB621;
+    background-color: #1BB621;
 }
 .service_container .under_line_e:after {
     /* border-bottom: 20px solid #C46BD1; */
     content: "E";
 }
 .service_container .under_line_e:before {
-    border-top: 20px solid #C46BD1;
+    background-color: #C46BD1;
 }
 .service_container .under_line_t:after {
     /* border-bottom: 20px solid #04A1EC; */
     content: "T";
 }
 .service_container .under_line_t:before {
-    border-top: 20px solid #04A1EC;
+    background-color: #04A1EC;
 }
 
 /* Flow */
